@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-vuvy
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0063-tenant/tkrw-pr714-0075-0063-app/devfile-sample-vuvy@sha256:2f67f32ba95ca8005ecfadbb8748b0b8bfff4e959ea90e838fca68f5a6cd5c25
+        name: my-nodejs
+        resources: {}
+status: {}
